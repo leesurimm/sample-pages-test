@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+        <title>page Sample</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
 <link rel="manifest" href="manifest.json">
-<title>page Sample</title>
-<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<canvas id="stage"></canvas>
+    <main>
+        <h1>GitHub Pages のサンプルです</h1>
+        <a href="http://www.tam-tam.co.jp/tipsnote/"><button>TipsNote に戻る</button></a>
+    </main>
 <script>
 // ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 if ('serviceWorker' in navigator) {
@@ -19,5 +21,8 @@ if ('serviceWorker' in navigator) {
 	});
 }
 </script>
+<script>
+    console.log('GitHub Pages Sample');
+    </script>
 </body>
 </html>

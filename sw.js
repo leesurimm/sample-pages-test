@@ -3,7 +3,7 @@
 
 var CACHE_NAME = 'sample-caches';
 var urlsToCache = [
-	'/css/style.css'
+	'/images/app-icon.png'
 ];
 
 self.addEventListener('install', function(event) {
