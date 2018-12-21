@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-            <title>TipsNote : GitHub Pages Sample</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
-    </head>
-    
-    <body>
-        <main>
-            <h1>GitHub Pages のサンプルです</h1>
-            <a href="http://www.tam-tam.co.jp/tipsnote/"><button>TipsNote に戻る</button></a>
-        </main>
-        
-        <script>
-            console.log('GitHub Pages Sample');
-            </script>
-    </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="manifest" href="manifest.json">
+<title>page Sample</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<canvas id="stage"></canvas>
+<script>
+// ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+if ('serviceWorker' in navigator) {
+	navigator.serviceWorker.register('sw.js').then(function(registration) {
+		console.log('ServiceWorker registration successful with scope: ', registration.scope);
+	}).catch(function(err) {
+		console.log('ServiceWorker registration failed: ', err);
+	});
+}
+</script>
+</body>
 </html>

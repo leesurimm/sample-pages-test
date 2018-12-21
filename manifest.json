@@ -1,0 +1,13 @@
+{
+	"short_name": "サンプル",
+	"name": "サンプルアプリ",
+	"display": "fullscreen",
+	"start_url": "index.html",
+	"icons": [
+		{
+			"src": "images/app-icon.png",
+			"sizes": "192x192",
+			"type": "image/png"
+		}
+	]
+}
