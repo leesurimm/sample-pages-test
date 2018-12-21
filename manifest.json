@@ -1,7 +1,7 @@
 {
 	"short_name": "サンプル",
 	"name": "サンプルアプリ",
-	"display": "fullscreen",
+	"display": "browser",
 	"start_url": "index.html",
 	"icons": [
 		{
