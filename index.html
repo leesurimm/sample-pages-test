@@ -2,17 +2,15 @@
 <html>
 <head>
     <meta charset="UTF-8">
-        <title>page Sample</title>
+        <title>PWA</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/marx/2.0.4/marx.css">
 <link rel="manifest" href="manifest.json">
 </head>
 <body>
     <main>
-        <h1>GitHub Pages のサンプルです</h1>
-        <a href="http://www.tam-tam.co.jp/tipsnote/"><button>TipsNote に戻る</button></a>
+        <h1>PWAのページ</h1>
     </main>
 <script>
-// ServiceWorker登録：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('sw.js').then(function(registration) {
 		console.log('ServiceWorker registration successful with scope: ', registration.scope);
@@ -22,7 +20,7 @@ if ('serviceWorker' in navigator) {
 }
 </script>
 <script>
-    console.log('GitHub Pages Sample');
+    console.log('PWAページ');
     </script>
 </body>
 </html>
